@@ -9,29 +9,33 @@ class Devine extends Component {
             recup: 0,
             nb: Math.floor(Math.random() * 9) + 1,
             message: "",
+            i: 0,
         }
     };
 
     verif(valeur) {
+        
         if (valeur < this.state.nb) {
             this.setState({
-                message: "Plus grand"
+                message: "Plus grand",
             })
         }
         else if (valeur > this.state.nb) {
             this.setState({
-                message: "Plus petit"
+                message: "Plus petit",
             })
         }
         else
             this.setState({
-                message: "Gagné"
-            })
+                message: "Gagné" ,               
+            });
+
         if (this.state.count === 3) {
-            this.setState({
-                message: "Perdu"
-            })
-        }
+                this.setState({
+                    message: "Perdu",                    
+                })
+            }
+        
     }
 
 
