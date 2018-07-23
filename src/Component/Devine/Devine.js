@@ -26,19 +26,13 @@ class Devine extends Component {
         else
             this.setState({
                 message: "Gagné"
-            })
-
-        
-       
+            })    
     }
     recupCount(){
         this.recupCount({
             recup: this.state.recup
         })       
     }
-
-
-
 
 
 
