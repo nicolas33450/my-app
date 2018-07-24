@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import Input from './Component/Input/Input';
+import Compteur2 from './Component/Compteur2/Compteur2';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Input />, document.getElementById('root'));
+ReactDOM.render(<Compteur2 />, document.getElementById('root'));
 registerServiceWorker();
