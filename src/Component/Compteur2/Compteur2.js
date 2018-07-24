@@ -32,9 +32,9 @@ class Compteur2 extends Component {
                     <div className="col-12 text-center">
                         <h1> Compteur 2 </h1>
                         <h1> {this.state.count}</h1>
-                        <button onClick={this.addCount.bind(this)} className="btn btn-success"> Ajouter </button>
+                        <button onClick={this.addCount.bind(this)} className="btn btn-success"> + </button>
                         <button onClick={this.reset.bind(this)} className="btn btn-warning m-3"> Reset </button>
-                        <button onClick={this.removeCount.bind(this)} className="btn btn-danger"> Enlever </button>
+                        <button onClick={this.removeCount.bind(this)} className="btn btn-danger"> - </button>
                     </div>
                 </div>
             </div>

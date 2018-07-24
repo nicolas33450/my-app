@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import Compteur2 from './Component/Compteur2/Compteur2';
+import RandomUser from './Component/RandomUser/RandomUser';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Compteur2 />, document.getElementById('root'));
+ReactDOM.render(<RandomUser />, document.getElementById('root'));
 registerServiceWorker();

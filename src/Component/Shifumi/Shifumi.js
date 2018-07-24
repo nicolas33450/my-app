@@ -4,8 +4,7 @@ class Shifumi extends Component {
     constructor() {
         super();
         this.state = {
-            count: 0,
-            recup: 0,
+            count: 0,        
             robot: Math.floor(Math.random() * 3),
             message: "",
             
