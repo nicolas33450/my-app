@@ -13,6 +13,7 @@ class Devine extends Component {
     };
 
     verif(valeur) {
+    
         if (valeur < this.state.nb) {
             this.setState({
                 message: "Plus grand"
@@ -27,11 +28,14 @@ class Devine extends Component {
             this.setState({
                 message: "Gagné"
             })
-        if (this.state.count === 3) {
+        if (this.state.count > 3) {
             this.setState({
                 message: "Perdu"
             })
         }
+        this.setState({
+            count: this.state.count + 1
+        })
     }
 
 

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import Devine from './Component/Devine/Devine';
+import Input from './Component/Input/Input';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Devine />, document.getElementById('root'));
+ReactDOM.render(<Input />, document.getElementById('root'));
 registerServiceWorker();
