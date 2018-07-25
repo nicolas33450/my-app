@@ -1,18 +1,21 @@
+body{
+  background-color: azure;
+}
 .header {
   padding-top: 50px;
   padding-bottom: 200px;
 }
 .info {
   margin-top: -100px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .headerInfo {
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #d2d2d2;
+  background-color: #d4c8db;
+  border-bottom: 1px solid #696868;
   height: 200px;
 }
 .arrondi {
-  padding: 10px;
+  padding: 6px;/*contour blanc autour de la photo */
   border: 1px solid #d2d2d2;
   border-radius: 400px;
   margin-top: -150px;
@@ -33,19 +36,11 @@ h2 {
 }
 .ajout {
   height: 50px;
-  transition: all ease 0.5s;
+  transition: all ease 0.6s;
   cursor: pointer;
 }
 #user {
   background: url(img/tete.png) no-repeat center bottom;
-}
-#user:hover,
-#email:hover,
-#age:hover,
-#city:hover,
-#phone:hover,
-#pwd:hover {
-  background-position-y: top;
 }
 #email {
   background: url(img/lettre.png) no-repeat center bottom;
@@ -61,4 +56,12 @@ h2 {
 }
 #pwd {
   background: url(img/cadenas.png) no-repeat center bottom;
+}
+#user:hover,
+#email:hover,
+#age:hover,
+#city:hover,
+#phone:hover,
+#pwd:hover {
+  background-position-y: top;
 }
