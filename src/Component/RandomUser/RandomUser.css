@@ -1,0 +1,29 @@
+.container{
+    height: 400px;
+    width: 1200px;
+    background-color: whitesmoke;
+}
+
+.separateur{    
+    height: 2px;
+    width: 1200px;
+    border: none;
+    box-shadow: none;
+    background-color:  grey;
+    margin-bottom: 700px;
+}
+
+.photo{
+    margin-bottom: -290px; 
+}
+
+.nom{
+    font-size: 2rem;
+    color: gray;
+    /*margin-top: 100px;*/
+}
+
+.img1{
+    background: url("../RandomUser/images/tete.png") center center no-repeat;
+
+}
