@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './RandomUser.css'
 
 class RandomUser extends Component {
 
@@ -17,8 +18,10 @@ class RandomUser extends Component {
                 let articles = data.results.map((item) => {
                     return (
                         <div key={item.email} className="col-12 text-center">
-                            <img src={item.picture.large} alt="tt" className=" rounded-circle"/><br/>
-                            {item.name.first}
+                            <img src={item.picture.large} alt="tt" className="photo rounded-circle" /><br />
+                            <div className="nom"> hi, my name is <br />
+                                {item.name.first} {item.name.last} </div>
+                            <div className="img1">&nbsp;</div>
                         </div>
                     );
                 })
@@ -34,8 +37,9 @@ class RandomUser extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    {this.state.articles}
+                    {this.state.articles}                
                 </div>
+                
             </div>
         )
     }
