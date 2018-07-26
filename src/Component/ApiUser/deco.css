@@ -1,0 +1,67 @@
+body{
+  background-color: azure;
+}
+.header {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.info {
+  margin-top: -100px;
+  background-color: rgb(255, 255, 255);
+}
+.headerInfo {
+  background-color: #d4c8db;
+  border-bottom: 1px solid #696868;
+  height: 200px;
+}
+.arrondi {
+  padding: 6px;/*contour blanc autour de la photo */
+  border: 1px solid #d2d2d2;
+  border-radius: 400px;
+  margin-top: -150px;
+  background-color: white;
+}
+.arrondi img {
+  border-radius: 400px;
+}
+h4 {
+  color: #999;
+  font-size: 18px;
+  margin-top: 40px;
+}
+h2 {
+  color: #2c2e31;
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+.ajout {
+  height: 50px;
+  transition: all ease 0.6s;
+  cursor: pointer;
+}
+#user {
+  background: url(img/tete.png) no-repeat center bottom;
+}
+#email {
+  background: url(img/lettre.png) no-repeat center bottom;
+}
+#age {
+  background: url(img/liste.png) no-repeat center bottom;
+}
+#city {
+  background: url(img/map.png) no-repeat center bottom;
+}
+#phone {
+  background: url(img/phone.png) no-repeat center bottom;
+}
+#pwd {
+  background: url(img/cadenas.png) no-repeat center bottom;
+}
+#user:hover,
+#email:hover,
+#age:hover,
+#city:hover,
+#phone:hover,
+#pwd:hover {
+  background-position-y: top;
+}
