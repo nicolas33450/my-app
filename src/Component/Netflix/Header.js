@@ -20,6 +20,9 @@ class Header extends Component {
                     <a href='#'>Top picks</a>
                     <a href='#'>Recent</a>
                 </div>
+                <div className="col-6 offset-md-1 col-md-3 d-flex align-items-center justify-content-between">
+                    <input className="search ml-10" type="text" placeholder="Search"/>
+                </div>
             </div>
         );
     }

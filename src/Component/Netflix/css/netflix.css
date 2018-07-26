@@ -20,6 +20,15 @@ body {
   text-decoration: none;
   border-radius: 5px;
 }
+.search{
+  background-color: #000;
+  border-radius: 40px;
+  color: #fff;
+  padding-left: 15px;
+}
+.bouton{
+  border: #e50914;
+}
 #feature {
   padding-top: 180px;
   height: 800px;
