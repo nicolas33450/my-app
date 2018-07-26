@@ -23,8 +23,7 @@ class TodoList extends Component {
         });
     }
 
-    deleteTodo(item) {
-       
+    deleteTodo(item) {       
         const array = this.state.items;
         const index = array.indexOf(item);
         array.splice(index, 1);

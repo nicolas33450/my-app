@@ -23,8 +23,7 @@ class Gouv extends Component {
                 return (
                     console.log(data),
                     <div key={item.properties.id} className="col-12 col-md-3 text-center">                                                     
-                         {item.properties.label}
-                        
+                         {item.properties.label}                        
                     </div>                       
                 );
             })
@@ -36,9 +35,7 @@ class Gouv extends Component {
         .catch((err) => {
             console.log(err)
         })
-    }
-
-   
+    }  
 
     render() {
         return (
