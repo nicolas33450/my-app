@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './App';
-import RandomUser from './Component/RandomUser/RandomUser';
+import Gouv from './Component/Gouv/Gouv';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<RandomUser />, document.getElementById('root'));
+ReactDOM.render(<Gouv />, document.getElementById('root'));
 registerServiceWorker();
