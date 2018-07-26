@@ -1,0 +1,64 @@
+body {
+  background-color: #000000;
+  background-color: -moz-linear-gradient(top, #000000 0%, #221f1f 100%);
+  background-color: -webkit-linear-gradient(top, #000000 0%, #221f1f 100%);
+  background-color: linear-gradient(to bottom, #000000 0%, #221f1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#221f1f', GradientType=0);
+  color: white;
+}
+#header {
+  z-index: 10;
+  padding-top: 30px;
+}
+#header a {
+  color: white;
+  transition: all ease 0.2s;
+  padding: 5px 10px;
+}
+#header a:hover {
+  background-color: #e50914;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#feature {
+  padding-top: 180px;
+  height: 800px;
+  background: url('../img/narcos.jpg') no-repeat;
+  background-size: cover;
+  font-size: 0.7rem;
+}
+#feature h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.film {
+  cursor: pointer;
+  overflow: hidden;
+  height: 300px;
+}
+.film .imgFilm {
+  height: 100%;
+  width: 100%;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+.film .ficheFilm {
+  transition: all ease 0.5s;
+  opacity: 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.film .ficheFilm p {
+  font-size: 0.7rem;
+}
+.film:hover .imgFilm {
+  transform: scale(1.2);
+}
+.film:hover .ficheFilm {
+  opacity: 1;
+}
