@@ -1,3 +1,30 @@
-.pablo{
-    background: url('../Features_Netflix/images/Pablo.jpg') center center no-repeat;
+body{
+    background-color: #000;
+}
+.header{
+     background-color: black;
+     line-height: 70px;
+    
+}
+.logo{
+    height: 50px;
+    margin: 10px;
+}
+.menu{
+    height: 50px;
+}
+
+.menu a{
+    color: #fff;
+    margin-right: 20px;
+}
+.menu a:hover{
+    color: #2c3e50;
+}
+.research{
+    height: 25px;
+    border-radius: 10px;
+}
+.toptv{
+    color: #fff;
 }

@@ -4,44 +4,46 @@ class List_Netflix extends Component {
 
     constructor() {
         super();
-        this.state={
-            articles: '',
+        this.state = {
+            photos: '',
         }
     };
-
     componentDidMount() {
-        fetch('https://api.themoviedb.org/3/discover/tv?sort_by=popularity.desc&page=1&api_key=87dfa1c669eea853da609d4968d294be')
+        fetch(this.props.titre)
             .then((response) => {
                 return response.json()
             })
             .then((data) => {
                 console.log(data.results)
-                let articles = data.results.map((item) => {
-                    return (
-                       
-                        <div key={item.name} className="col-12">
-                        </div>
-                    );
+                let photos = data.results.map((item, i) => {
+
+                    if (i < 6) {
+
+                        return (
+                            <div key={item.name} className="col-12 col-md-2 mb-5">
+                                <img className="w-100" src={"http://image.tmdb.org/t/p/original/" + item.backdrop_path} alt="" />
+                            </div>
+                        );
+                    }
                 })
                 this.setState({
-                    articles: articles
+                    photos: photos
                 })
             })
             .catch((err) => {
                 console.log(err)
             })
     }
-
     render() {
 
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        {this.state.articles}
-                    </div>
+            <div className="container-fluid pr-5 pl-5">
+                <div className=" row ">
+                    {this.state.photos}
                 </div>
             </div>
+
+
         );
     }
 }
